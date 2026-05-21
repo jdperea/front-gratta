@@ -17,12 +17,12 @@ export default function Home() {
   useEffect(() => {
     console.log("isOpen:", isOpen);
     if (isOpen && sectionRef.current) {
-    sectionRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-}, [isOpen]);
+      sectionRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [isOpen]);
   return (
     <>
       <Menu />

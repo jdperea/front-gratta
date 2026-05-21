@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 type FormData = {
   nombre: string;
@@ -15,6 +15,7 @@ type Errors = Partial<FormData>;
 
 export default function EmprendedoresForm() {
   const [isOpen, setIsOpen] = useState(false);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
   const [form, setForm] = useState<FormData>({
     nombre: "",
     apellido: "",
@@ -23,6 +24,15 @@ export default function EmprendedoresForm() {
     elemento: "",
     apartamento: "",
   });
+  useEffect(() => {
+    console.log("isOpen:", isOpen);
+    if (isOpen && sectionRef.current) {
+      sectionRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [isOpen]);
 
   const [errors, setErrors] = useState<Errors>({});
   const [loading, setLoading] = useState(false);
@@ -159,10 +169,10 @@ export default function EmprendedoresForm() {
       </div>
       <form
         onSubmit={handleSubmit}
-         className={`${isOpen ? 'block' : 'hidden'} mt-16 max-w-xl w-full mx-auto flex flex-col gap-4`}
+         className={`${isOpen ? 'block' : 'hidden'} mt-16 max-w-xl w-full mx-auto flex flex-col gap-4 mb-12`}
       >
         {/* Nombre */}
-        <div>
+        <div ref={sectionRef}>
           <input
             type="text"
             name="nombre"
