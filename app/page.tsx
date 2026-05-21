@@ -65,15 +65,15 @@ export default function Home() {
           </p>
           <ul className="w-3/4 md:w-4/6 text-center text-xl leading-8 text-zinc-950 dark:text-zinc-50 space-y-5 py-5">
             <li className="flex items-start gap-2 text-white">
-              <CheckCircleIcon className="text-[var(--color-primary)] w-6 h-6 mt-1" />
-              <span className="text-white">Cupos limitados (<span className="text-[var(--color-primary)]">10</span>-<span className="text-[var(--color-primary)]">15</span> <span className="text-[var(--color-secundary)]">stands</span>)</span>
+              <CheckCircleIcon className="text-[var(--color-primary)] w-8 h-8 mt-1" />
+              <span className="text-white">Cupos limitados y exclusivos para <b className="text-[var(--color-primary)]">residentes</b> de la unidad <b className="text-[var(--color-primary)]">Gratta</b> (<span className="text-[var(--color-primary)]">10</span>-<span className="text-[var(--color-primary)]">15</span> <span className="text-[var(--color-secundary)]">stands</span>)</span>
             </li>
             <li className="flex items-start gap-2 text-white">
-              <CheckCircleIcon className="text-[var(--color-primary)] w-11 h-11 mt-1" />
+              <CheckCircleIcon className="text-[var(--color-primary)] w-8 h-8 mt-1" />
               <span className="text-white">Exclusividad de producto (<span className="text-[var(--color-primary)]">¡</span><span className="text-[var(--color-primary)]">No habrá competencia directa</span> <span className="text-[var(--color-secundary)]">!</span>)</span>
             </li>
             <li className="flex items-start gap-2 text-white">
-              <CheckCircleIcon className="text-[var(--color-primary)] w-12 h-15 mt-1" />
+              <CheckCircleIcon className="text-[var(--color-primary)] w-8 h-8 mt-1" />
               <span className="text-white">El comité de convivencia de la unidad se encarga de la <span className="text-[var(--color-primary)]">hidratación</span> y <span className="text-[var(--color-secundary)]">bebidas</span>.</span>
             </li>
           </ul>
