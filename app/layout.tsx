@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Unidad Gratta - Aerorumba y Kermés",
-  description: "¡Únete a la fiesta en la Unidad Gratta el 7 de Junio! Aerorumba a las 9:00 AM y Kermés de Emprendedores a las 10:30 AM. ¡No te lo pierdas!",
+  description: "¡En la Unidad Gratta el próximo 7 de Junio de 2026! Tendremos Aerorumba a las 9:00 AM y Kermés de Emprendedores a las 10:30 AM. ¡No te lo pierdas!",
 };
 
 export default function RootLayout({
