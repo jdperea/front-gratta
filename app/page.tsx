@@ -28,7 +28,7 @@ export default function Home() {
       <Menu />
       <div className="flex flex-col items-center justify-start min-h-screen bg-zinc-50 font-sans dark:bg-black">
         <h1 className="w-[87.5%] md:w-4/6 text-center text-6xl font-bold text-zinc-950 dark:text-zinc-50 my-16">
-          ¡El <span className="font-bold text-[var(--color-primary)]">7 de Junio</span> nos espera una mañana de <span className="text-[var(--color-secundary)]">Aerorumba y Sabor</span> en la <span className="font-bold text-[var(--color-primary)]">Unidad Gratta</span>!
+          ¡El próximo <span className="font-bold text-[var(--color-primary)]">7 de Junio de 2026</span> nos espera una mañana de <span className="text-[var(--color-secundary)]">Aerorumba y Sabor</span> en la Unidad <span className="font-bold text-[var(--color-primary)]">Gratta</span>!
         </h1>
         <p className="w-[87.5%] md:w-4/6 text-center text-3xl leading-8 my-6 px-4 text-white">
           <span className="text-[var(--color-primary)]">9:00 AM</span>: Arrancamos con toda la energía en la Aerorumba.
@@ -64,6 +64,10 @@ export default function Home() {
             Reglas Claras:
           </p>
           <ul className="w-3/4 md:w-4/6 text-center text-xl leading-8 text-zinc-950 dark:text-zinc-50 space-y-5 py-5">
+            <li className="flex items-start gap-2 text-white">
+              <CheckCircleIcon className="text-[var(--color-primary)] w-8 h-8 mt-1 flex-none" />
+              <span className="text-white">Solo se requiere de un aporte de <b className="text-[var(--color-primary)]">$15.000</b> para rentar el <b className="text-[var(--color-secundary)]">tablón del stand</b></span>
+            </li>
             <li className="flex items-start gap-2 text-white">
               <CheckCircleIcon className="text-[var(--color-primary)] w-8 h-8 mt-1 flex-none" />
               <span className="text-white">Cupos limitados y exclusivos para <b className="text-[var(--color-primary)]">residentes</b> de la unidad <b className="text-[var(--color-primary)]">Gratta</b> (<span className="text-[var(--color-primary)]">10</span>-<span className="text-[var(--color-primary)]">15</span> <span className="text-[var(--color-secundary)]">stands</span>)</span>
