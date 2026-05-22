@@ -164,7 +164,7 @@ export default function EmprendedoresForm() {
           className="flex h-18 w-full items-center justify-center gap-2 rounded-full bg-[var(--color-primary)] px-5 py-4 text-white dark:text-gray-900 transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[458px] my-4"
           >
           <span>{isOpen ? '▲' : '▼'}</span>
-          <span>Regístrate <span className="text-[var(--color-secundary)]">aquí</span> antes del 24 de mayo para separar tu cupo y producto</span>
+          <span>Regístrate <span className="text-[var(--color-secundary)]">aquí</span> antes del 29 de mayo para separar tu cupo y producto</span>
         </button>
       </div>
       <form
